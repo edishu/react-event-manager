@@ -1,11 +1,19 @@
 {
-  "name": "react-event-manager",
-  "version": "0.0.1",
+  "name": "@edishu/react-event-manager",
+  "version": "0.0.2",
+  "type": "module",
   "description": "React Event Manager",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "rmdir": "node -e \"var fs = require('fs'); try{fs.rmdirSync('./dist', { recursive: true })}catch(err){console.log(`Dist not found`)}; process.exit(0);\"",
+    "build": "npm run rmdir && tsc"
   },
   "author": "edishu",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.8.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
 }

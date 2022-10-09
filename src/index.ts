@@ -1,3 +1,2 @@
-export const evtHello = () => {
-  console.log("Hello form @edishu/react-event-manager!");
-};
+export { createEventManager, EventManagerType } from "./createEventManager";
+export { EventManager } from "./EventManagerContext";

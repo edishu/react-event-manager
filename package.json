@@ -7,7 +7,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "rmdir": "node -e \"var fs = require('fs'); try{fs.rmdirSync('./dist', { recursive: true })}catch(err){console.log(`Dist not found`)}; process.exit(0);\"",
-    "build": "npm run rmdir && tsc"
+    "build": "npm run rmdir && tsc",
+    "dev": "tsc --watch"
   },
   "author": "edishu",
   "license": "MIT",
